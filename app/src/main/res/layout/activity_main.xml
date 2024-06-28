@@ -3,7 +3,12 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="40px"
+    android:background="@drawable/background"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="350px"
+        android:layout_height="350px"
+        android:background="@drawable/fisatlogo"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +24,8 @@
         android:textColorHint="#656666"
         android:id="@+id/uname"
         android:background="#F8F8F8"
-        android:layout_marginBottom="20px"/>
+        android:layout_marginBottom="20px"
+        android:padding="13px"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +42,9 @@
         android:id="@+id/pass"
         android:background="#F8F8F8"
         android:layout_marginBottom="20px"
-        android:inputType="numberPassword"/>
+        android:padding="13px"
+        android:inputType="numberPassword"
+        android:drawableLeft="@drawable/baseline_lock_24"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
