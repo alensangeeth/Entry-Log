@@ -1,0 +1,92 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40px"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME:"
+        android:textSize="60px"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textColor="@color/black"
+        android:textColorHint="#656666"
+        android:id="@+id/name"
+        android:background="#F8F8F8"
+        android:layout_marginBottom="30px"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADMISSSION NO:"
+        android:textSize="60px"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Admission No"
+        android:textColor="@color/black"
+        android:textColorHint="#656666"
+        android:id="@+id/adnum"
+        android:background="#F8F8F8"
+        android:layout_marginBottom="30px"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SYSTEM NO:"
+        android:textSize="60px"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter System No"
+        android:textColor="@color/black"
+        android:textColorHint="#656666"
+        android:id="@+id/sysnum"
+        android:background="#F8F8F8"
+        android:layout_marginBottom="30px"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEPARTMENT:"
+        android:textSize="60px"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20px"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Department"
+        android:textColor="@color/black"
+        android:textColorHint="#656666"
+        android:id="@+id/depart"
+        android:background="#F8F8F8"
+        android:layout_marginBottom="30px"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:text="ADD TO RECORDS"
+        android:textSize="20dp"
+        android:layout_margin="20px"
+        android:layout_marginTop="70px"
+        android:id="@+id/addtorec"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:text="LOGout"
+        android:textSize="20dp"
+        android:layout_margin="20px"
+        android:layout_marginTop="30px"
+        android:id="@+id/logout"/>
+</LinearLayout>
