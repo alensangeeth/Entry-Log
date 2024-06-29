@@ -1,6 +1,7 @@
 package com.example.entrylog;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -16,6 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     EditText ed1,ed2;
     AppCompatButton b1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,11 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 String getpass=ed2.getText().toString();
                 if(getuname.equals("admin")&&getpass.equals("12345"))
                 {
-                    Toast.makeText(getApplicationContext(),"SUCCESSFULLY LOGGED IN",Toast.LENGTH_SHORT).show();
-                    Intent i=new Intent(getApplicationContext(),Log.class);
-                    startActivity(i);
+                    SharedPreferences preferance=getSharedPreferences("login",MODE_PRIVATE);
+                    SharedPreferences.Editor editor= preferance.edit();
+                    editor.putString("user","admin");
+                    editor.apply();
+                    Intent in=new Intent(getApplicationContext(), Log.class);
+                    startActivity(in);
                 }
-                else {
+                else
+                {
                     Toast.makeText(getApplicationContext(), "Invalid Credential", Toast.LENGTH_SHORT).show();
                 }
 
